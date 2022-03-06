@@ -25,7 +25,7 @@ const addRole = async () => {
     }
     ])
 
-    awaits connection.queryPromise(
+    await connection.queryPromise(
         "INSERT INTO roles SET?", {
             title: answers.title,
             salary: answers.salary,
