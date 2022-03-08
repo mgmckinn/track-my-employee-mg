@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/mgmckinn/track-my-employee-mg"
+    "url": "git+ssh://git@github.com/mgmckinn/track-my-employee-mg.git"
   },
   "author": "Mitchell McKinney",
   "license": "MIT",
@@ -18,6 +18,14 @@
     "inquirer": "^8.2.0",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.15"
-  }
+    "nodemon": "^2.0.15",
+    "npm": "^8.5.3"
+  },
+  "bugs": {
+    "url": "https://github.com/mgmckinn/track-my-employee-mg/issues"
+  },
+  "homepage": "https://github.com/mgmckinn/track-my-employee-mg#readme",
+  "keywords": [
+    "mysql2"
+  ]
 }
