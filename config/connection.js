@@ -5,7 +5,7 @@ const { promisify } = require('util');
 
 const connection =mysql.createConnection({
     host: 'localhost',
-    port: 3306,
+    port: 3301,
     user: 'root',
     password: 'M@ddog12',
     database: 'employee_db'

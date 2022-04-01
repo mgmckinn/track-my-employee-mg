@@ -26,7 +26,7 @@ const taskQuestion = [{
     new inquirer.Separator('===EXIT===' .orange),
     'Exit Application', 
     ],
-    pageSize: 10,
+    pageSize: 20,
 }];
 
 module.exports =taskQuestion;
