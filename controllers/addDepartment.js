@@ -2,7 +2,7 @@ const inquirer = require('inquirer');
 const connection = require('../config/connection')
 
 
-const addDepartment = (department) => {
+const addDepartment = (askTask) => {
     inquirer.prompt([{
         type: 'input',
         message: 'For which department does the employee work?',

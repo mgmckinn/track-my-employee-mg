@@ -1,33 +1,30 @@
 {
   "name": "track-my-employee-mg",
   "version": "1.0.0",
-  "description": "database to completely organize and manage your team and departments and important information that details roles, salaries,etc.",
-  "main": "server.js",
+  "description": "track-my-employee-mg",
+  "main": "index.js",
   "scripts": {
-    "start": "kill -9 $(lsof -ti:3000,3001) && npm start",
-    "type": "module",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
-  },
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node index.js"
+    },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mgmckinn/track-my-employee-mg.git"
   },
-  "author": "Mitch",
-  "license": "MIT",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/mgmckinn/track-my-employee-mg/issues"
   },
   "homepage": "https://github.com/mgmckinn/track-my-employee-mg#readme",
   "dependencies": {
-    "color": "^4.2.1",
+    "colors": "^1.4.0",
     "console.table": "^0.10.0",
-    "express": "^4.17.3",
+    "i": "^0.3.7",
     "inquirer": "^8.2.2",
-    "jest": "^27.5.1",
     "mysql": "^2.18.1",
     "mysql2": "^2.3.3",
-    "nodemon": "^2.0.15",
     "npm": "^8.6.0"
   }
 }

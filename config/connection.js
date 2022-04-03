@@ -1,5 +1,5 @@
  //connect to mysql 
- const mysql = require('mysql');
+ const mysql = require('mysql2');
  const { promisify } = require('util')
 
  const connection = mysql.createConnection({
