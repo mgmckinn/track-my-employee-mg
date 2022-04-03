@@ -1,5 +1,5 @@
 const inquirer = require('inquirer');
-const { getAllManagers } = require('./getAll');
+
 const {getAllManagers} = require('./getAll');
 
 const viewByManager = () => {

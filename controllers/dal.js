@@ -1,7 +1,7 @@
 const consoleTable = require('console.table'); 
 const connection = require('../config/connection');
 
-const middleware = {
+const dal = {
     viewAll: function(query) {
         return new Promise((resolve, reject) => {
             connection.query(query, (err, result) => {

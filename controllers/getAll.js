@@ -41,4 +41,4 @@ const getAllManagers = async () => {
     }
 };
 
-module.exports = {getAllEmp, getAllRoles, getAllDepartments, getAllManagers}
+module.exports = {getAllEmp, getAllRoles, getAllDepartments, getAllManagers};

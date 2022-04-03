@@ -6,7 +6,7 @@ const {allDepartments} = require('../db/queries');
 const {getAllDepartments} = require('./getAll');
 
 const addRole = async () => {
-    const allDepartments =await getAllDepartments()
+    const allDepartments = await getAllDepartments()
     const answers = await inquirer.prompt([{
         type: 'input',
         name: 'title',
