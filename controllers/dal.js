@@ -6,27 +6,27 @@ const dal = {
         return new Promise((resolve, reject) => {
             connection.query(query, (err, result) => {
                 if (err) return reject(err);
-                console.log('/n');
-                console.log(result);
-                console.log('/n');
+                console.log('\n');
+                console.table(result);
+                console.log('\n');
                 resolve(result);
             });
         });
     },
-viewAllBy: function(query, colToSearch, valueCol) {
+viewAllBy: function(query, colToSearch, valueOfCol) {
     return new Promise((resolve, reject) => {
-            connection.query(query, [colToSearch, valueCol], (err, result) => {
+            connection.query(query, [colToSearch, valueOfCol], (err, result) => {
                 if (err) return reject(err);
-                console.log('/n');
+                console.log('\n');
                 console.table(result);
-                console.log('/n');
+                console.log('\n');
                 resolve(result);
             })
         })
 
     },
 
-    deleteForm:function(query, table, condition) {
+    deleteFrom:function(query, table, condition) {
         return new Promise((resolve, reject) => {
             connection.query(query, [table, condition], (err, result) => {
                 if (err) return reject(err);

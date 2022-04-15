@@ -5,7 +5,7 @@ const { getAllRoles, getAllManagers } = require('./getAll');
 
 const addEmployee = (askTask) => {
     Promise.all([getAllRoles(), getAllManagers()])
-        .then(([getAllRoles, getAllManagers]) => 
+        .then(([allRoles, allManagers]) => 
          inquirer.prompt([{
                     type: 'input',
                     name: 'firstName',
@@ -40,12 +40,12 @@ const addEmployee = (askTask) => {
             name: 'managerId',
             message: "Who is your employee's manager?",
             choices: getAllManagers,
-            when: (answers) => answers.haveManagerOrNot === 'yes',
+            when: (answers) => answers.ManagerOrNot === 'yes',
         }
         ])).then((answers) => {
-            if (answers.haveManagerOrNot === 'yes') {
+            if (answers.ManagerOrNot === 'yes') {
                 connection.query(
-                    "INSERT TO employees SET?", {
+                    "INSERT INTO employees SET?", {
                         first_name: answers.firstName,
                         last_name: answers.lastName,
                         role_id: Number(answers.roleId),
@@ -59,4 +59,4 @@ const addEmployee = (askTask) => {
             }
         }).catch((err) => console.log(err));
     };
-    module.exports = addEmployee
+    module.exports = addEmployee;

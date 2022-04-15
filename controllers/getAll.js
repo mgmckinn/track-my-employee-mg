@@ -1,4 +1,4 @@
-const { FORMERR } = require('dns');
+
 const util = require('util');
 const connection = require('../config/connection');
 
@@ -35,7 +35,7 @@ const getAllDepartments = async() => {
 const getAllManagers = async () => {
     try {
         const rows  = await queryAsync("SELECT * FROM employees WHERE manager_id IS NULL");
-        return rows.map((manager) => ({name: `${manager.first_name, value}, ${manager.last_name}`, value:manager_id}));
+        return rows.map((manager) => ({name: `${manager.first_name}, ${manager.last_name}`, value:manager.id}));
     } catch (err) {
         console.log('Error querying getAllManagers'. err);
     }

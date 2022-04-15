@@ -1,12 +1,12 @@
  //connect to mysql 
- const mysql = require('mysql2');
+ const mysql = require('mysql');
  const { promisify } = require('util')
 
  const connection = mysql.createConnection({
      host: 'localhost',
      port: 3306,
-     user: 'root',
-     password: 'M@ddog12',
+     user: 'sqluser',
+     password: 'password',
      database: 'employee_db'
      
  });

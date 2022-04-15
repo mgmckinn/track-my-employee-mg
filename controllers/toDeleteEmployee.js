@@ -1,9 +1,9 @@
 const inquirer = require('inquirer');
-const {getAllEmployees} = require('./getAll');
+const {getAllEmp} = require('./getAll');
 
-const toDeleteEmployees = () => {
+const toDeleteEmployee = () => {
     return new Promise((resolve, reject) => {
-        getAllEmployees()
+        getAllEmp()
         .then((allEmployees) => 
             inquirer.prompt([{
                 type: 'list',
@@ -17,4 +17,4 @@ const toDeleteEmployees = () => {
     });
 };
 
-module.exports.deleteEmployees
+module.exports = toDeleteEmployee;

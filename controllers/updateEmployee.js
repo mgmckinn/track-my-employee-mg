@@ -59,4 +59,4 @@ const updateEmployee = () => {
         }).catch((err) => console.log(err));
 };
 
-module.exports = updateEmployee
+module.exports = updateEmployee;

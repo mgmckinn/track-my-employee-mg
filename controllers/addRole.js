@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
-const askTask = require('../index')
+const askTask = require('../index');
 
-const connect = require('../config/connection');
+const connection = require('../config/connection');
 const {allDepartments} = require('../db/queries');
 const {getAllDepartments} = require('./getAll');
 
