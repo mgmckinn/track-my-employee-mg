@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
-    "seeds": "npm run seed"
+     "start": "kill -9 $(lsof -ti:3000,3001) && npm start",
+    "seeds": "npm run seeds"
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
     "console.table": "^0.10.0",
     "inquirer": "^8.2.2",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3"
+    "mysql2": "^2.3.3",
+    "promise-mysql": "^5.1.0"
   }
 }
