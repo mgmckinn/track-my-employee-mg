@@ -2,11 +2,11 @@
   "name": "track-my-employee-mg",
   "version": "1.0.0",
   "description": "track-my-employee-mg",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-     "start": "kill -9 $(lsof -ti:3000,3001) && npm start",
-    "seeds": "npm run seeds"
+    "seeds": "npm run seeds",
+    "start": "kill -9 $(lsof -ti:3000,3001) && npm start"
   },
   "repository": {
     "type": "git",
@@ -20,11 +20,9 @@
   },
   "homepage": "https://github.com/mgmckinn/track-my-employee-mg#readme",
   "dependencies": {
-    "colors": "^1.4.0",
     "console.table": "^0.10.0",
     "inquirer": "^8.2.2",
     "mysql": "^2.18.1",
-    "mysql2": "^2.3.3",
-    "promise-mysql": "^5.1.0"
+    "mysql2": "^2.3.3"
   }
 }
