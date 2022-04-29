@@ -1,21 +1,23 @@
  //connect to mysql 
  const mysql = require('mysql2');
  const inquirer =require('inquirer');
- const consoleTable = require('console.table');
+ require('console.table');
 
  //Establish connection
- let connection = mysql.createConnection({
+ const connection = mysql.createConnection({
      host: 'localhost',
-     port: 3001,
+    port: 3306,
      user: 'root',
-     password: 'root',
+     password: 'M@ddog12',
      database: 'employee_db'
      
  });
 
   connection.connect(function(err) {
+        if (err) throw err;
     console.log('Connected to the employees database.');
 });
+
 
 module.exports = connection;
 
@@ -180,18 +182,18 @@ module.exports = connection;
      });
 
  } function updateRole() {
-     const query = "SELECT id, first_name, last_name, role_id FROM emploee";
-     connection.query(query, function(err, res) {
-         if (err) throw err;
-         console.table(res);
-         {
+        const query = "SELECT * FROM employee";
+        connection.query(query, function(err, res) {
+            if (err) throw err;
+            console.table(res);
+            start();
              inquirer.prompt({
                  type: 'input',
                  message: "Which employee needs to be updated?",
                  name: "employee"
              });
          }
-     });;
+     );;
 
  }
 

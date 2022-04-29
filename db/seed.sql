@@ -17,10 +17,10 @@ VALUES
  ('Senior Banker', 400, 100000, 4),
  ('CSR', 401, 80000, 4);
 
-INSERT INTO employee (id, first_name, last_name, role_id, manager_id)
+INSERT INTO employee (first_name, last_name, role_id, manager_id)
 VALUES 
-(6, 'Brewer', 'Julia', 100, 3),
- (7, 'Matt', 'Rix', 101, 3),
- (8, 'Crystal', 'Wellington', 301, 1),
- (9, 'Sam', 'Brickman', 400 ,3),
- (10, 'Holly', 'Highness', 401, 4);
+('Brewer', 'Julia', , 3),
+ ('Matt', 'Rix', 101, 3),
+ ('Crystal', 'Wellington', 301, 1),
+ ('Sam', 'Brickman', 400 ,3),
+ ('Holly', 'Highness', 401, 4);
