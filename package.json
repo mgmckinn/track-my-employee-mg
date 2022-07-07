@@ -4,10 +4,7 @@
   "description": "track-my-employee-mg",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "seeds": "npm run seeds",
-    "start": "kill -9 $(lsof -ti:3000,3001) && npm start",
-    "server": "node server.js"
+    "start": "node index"
   },
   "repository": {
     "type": "git",
@@ -21,9 +18,10 @@
   },
   "homepage": "https://github.com/mgmckinn/track-my-employee-mg#readme",
   "dependencies": {
+    "asciiart-logo": "^0.2.6",
     "console.table": "^0.10.0",
-    "express": "^4.18.0",
     "inquirer": "^8.2.2",
+    "mysql": "^2.18.1",
     "mysql2": "^2.3.3"
   }
 }
